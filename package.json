@@ -1,0 +1,32 @@
+{
+  "name": "server-alert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/pm2 start index.js --name \"server-alert\" --node-args=\"-r esm\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoemaNequinto/server-alert.git"
+  },
+  "keywords": [
+    "node",
+    "pm2",
+    "notification",
+    "slack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoemaNequinto/server-alert/issues"
+  },
+  "homepage": "https://github.com/JoemaNequinto/server-alert#readme",
+  "dependencies": {
+    "@slack/webhook": "^5.0.3",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "pm2": "^4.4.0"
+  }
+}
